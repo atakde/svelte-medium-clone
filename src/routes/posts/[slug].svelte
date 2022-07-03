@@ -28,8 +28,8 @@
 </script>
 
 <svelte:head>
-	<title />
-	<meta name="description" content="" />
+	<title>{post.title}</title>
+	<meta name="description" content={post.body} />
 </svelte:head>
 
 <section>
@@ -139,7 +139,10 @@
 		{/each}
 	</div>
 	<div class="written-container">
-		<img src="https://atakann.com/static/media/img-profile.e1ab5d54becc4acc26c5.jpeg" alt="Author"/>
+		<img
+			src="https://atakann.com/static/media/img-profile.e1ab5d54becc4acc26c5.jpeg"
+			alt="Author"
+		/>
 		<div>
 			<span class="written-by">Written by</span>
 			<a href="/author/">Atakan Demircioğlu</a>
@@ -224,7 +227,7 @@
 
 	.tags > a {
 		padding: 5px 10px;
-		background: #F2F2F2;
+		background: #f2f2f2;
 		border-radius: 4px;
 		color: #777777;
 		margin-right: 10px;
@@ -261,7 +264,7 @@
 		color: #292929;
 		text-decoration: none;
 	}
-	
+
 	.written-container > div > small {
 		font-size: 16px;
 		font-weight: 400;
@@ -273,5 +276,4 @@
 		font-weight: 400;
 		color: #757575;
 	}
-
 </style>

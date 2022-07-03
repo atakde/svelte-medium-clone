@@ -24,7 +24,7 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Svelte medium clone" />
 </svelte:head>
 
 <section>
@@ -32,7 +32,11 @@
 		<article>
 			<a href="/posts/{post.id}">
 				<div class="author">
-					<img width="32" src="https://atakann.com/static/media/img-profile.e1ab5d54becc4acc26c5.jpeg" alt="Author" />
+					<img
+						width="32"
+						src="https://atakann.com/static/media/img-profile.e1ab5d54becc4acc26c5.jpeg"
+						alt="Author"
+					/>
 					<span>Atakan Demircioğlu</span>
 					<span>2 days ago</span>
 				</div>
@@ -68,7 +72,7 @@
 		flex-direction: column;
 		gap: 10px;
 		padding: 24px 0;
-    	border-bottom: 1px solid rgb(231, 228, 228);
+		border-bottom: 1px solid rgb(231, 228, 228);
 	}
 
 	.author {
@@ -106,5 +110,4 @@
 		padding: 6px;
 		border-radius: 100px;
 	}
-
 </style>
