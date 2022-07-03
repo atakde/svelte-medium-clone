@@ -52,7 +52,7 @@
 	{/each}
 </section>
 
-<style lang="scss">
+<style lang="css">
 	h2 {
 		font-size: 22px;
 		font-weight: 700;

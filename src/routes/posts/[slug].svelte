@@ -151,7 +151,7 @@
 	</div>
 </section>
 
-<style lang="scss">
+<style lang="css">
 	section {
 		font-family: 'Georgia';
 		margin-top: 33px;

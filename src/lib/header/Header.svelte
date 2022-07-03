@@ -60,27 +60,29 @@
 	</div>
 </header>
 
-<style lang="scss">
+<style lang="css">
 	header {
 		display: flex;
 		height: 65px;
 		background: #FFFFFF;
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-		padding: 0 163px;
-		justify-content: space-between;
-		align-items: center;
 	}
 
 	header > div {
 		display: flex;
 		justify-content: space-between;
-		max-width: 1024px;
+		align-items: center;
+		max-width: 1280px;
 		width: 100%;
-		margin: 0 auto;
+		margin: auto;
 	}
 
 	.logo-container,
 	.navigation {
+		display: flex;
+	}
+
+	.logo-container > a {
 		display: flex;
 	}
 
@@ -99,5 +101,12 @@
 		width: 32px;
 		height: 32px;
 		border-radius: 50%;
+	}
+
+	@media ( max-width:1280px ) {
+		header > div {
+			max-width: 100%;
+			padding: 0 16px;
+		}
 	}
 </style>
